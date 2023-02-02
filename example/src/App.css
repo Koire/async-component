@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.modal {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: slategrey;
+  grid-template-rows: 1fr 1fr;
+  min-height: 200px;
+}
