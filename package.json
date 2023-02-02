@@ -1,0 +1,26 @@
+{
+  "name": "async-component",
+  "version": "1.0.0",
+  "description": "simple async react component that forces and explicit response from the user before continuing, like a modal for terms and services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koire/async-component.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Koire/async-component/issues"
+  },
+  "homepage": "https://github.com/Koire/async-component#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "playwright": "^1.30.0"
+  }
+}
