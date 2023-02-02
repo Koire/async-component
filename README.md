@@ -1,6 +1,10 @@
 # Async-Component
 
-## Installation
+## Description
+
+A very simple component that creates a blocking module that requires user interaction to continue.
+This is very useful for confirming a module pop-up, or for two step functions where you have to absolutely confirm the user's interaction, i.e. deleting from a database or changing a critical setting.
+The cancel or confirm function will allow you to register the user's exact interaction.
 
 ## Usage
 
