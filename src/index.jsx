@@ -15,21 +15,20 @@ export const AsyncComponentCreator = () => {
     const [isShowing, setShowing] = React.useState(false);
     return {
         AsyncComponent: ({ children }) => {
-            return (
-                isShowing && (<>{children}</>)
-            );
+            return (isShowing && (<>{children}</>))
         },
-        asyncGetValue: () => {
+        asyncGetValue: (fn = e => {}) => {
             setShowing(!isShowing);
             const promise = new Promise((res, rej) => {
                 resolve.current = res;
                 reject.current = rej;
             });
-            return promise;
+            return promise.catch(e => fn(e));
         },
         cancel: (fn = a => a) => {
             setShowing(false)
-            reject.current(fn())
+            const result = fn()
+            reject.current(result || false)
         },
         confirm: (fn = a => a) => {
             setShowing(false)

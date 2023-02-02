@@ -4,7 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
-
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
 .modal {
   z-index: 1;
   display: grid;
@@ -16,7 +20,9 @@
   transform: translate(-50%, -50%);
   padding: 10px;
   border-radius: 5px;
-  background-color: slategrey;
+  background-color: black;
   grid-template-rows: 1fr 1fr;
   min-height: 200px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
 }
